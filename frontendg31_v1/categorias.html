@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Categorías</title>
+</head>
+
+<body>
+    <!--Cabecera principal-->
+    <h1>Listado de Categorias</h1>
+
+    <!--Sección regresar-->
+    <a href="index.html" target="_self">Regresar</a>
+    <br><br>
+
+    <!--Seccion nueva categoria-->
+    <div id="new">
+        <h2>Nueva Categoria</h2>
+        <label for="name">Nombre de la Categoría: </label>
+        <input type="text" id="name">
+        <br><br>
+        <button id="new_category">Ingresar</button>
+        <button id="cancel_new_category">Cancelar</button>
+    </div>
+
+    <!--Seccion modificar categoria-->
+    <div id="save">
+        <h2>Modificar Categoria</h2>
+        <label for="id_edit">Código de la Categoría: </label>
+        <input type="text" id="id_edit">
+        <br><br>
+        <label for="name_edit">Nombre de la Categoría: </label>
+        <input type="text" id="name_edit">
+        <br><br>
+        <button id="save_category">Guardar</button>
+        <button id="cancel_save_category">Cancelar</button>
+    </div>
+
+    <!--Seccion eliminar categoria-->
+    <div id="delete">
+        <h2>Eliminar Categoria</h2>
+        <p>Esta seguro de eliminar la categoría:</p>
+        <ol>
+            <li>1</li>
+            <li>NOVELAS</li>
+        </ol>
+        <button id="delete_category">Guardar</button>
+        <button id="cancel_delete_category">Cancelar</button>
+    </div>
+
+    <!--Seccion listar categorias-->
+    <div id="list_data">
+        <h2>Categorias</h2>
+        <button id="insert_category">Nueva Categoría</button>
+        <br><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre Categoría</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>NOVELAS
+                    </td><td>Acción</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CUENTOS</td>
+                    <td>Acción</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>NOVELA NEGRA</td>
+                    <td>Acción</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/categorias.js"></script>
+</body>
+</html>
